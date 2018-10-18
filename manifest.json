@@ -1,0 +1,11 @@
+  {
+    "name": "SEO Tester",
+    "version": "1.0",
+    "description": "SEO Tester!",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "seo.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["tabs", "<all_urls>"]
+  }
