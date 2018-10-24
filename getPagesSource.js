@@ -26,6 +26,10 @@ function collectSEO(doc) {
         msg += document.querySelector("script[type='application/ld+json']").innerText;
     }
 
+    msg += "<h4>Internal links:</h4>";
+    var allLinks = Array.from(document.querySelectorAll("a"));
+    msg += allLinks.filter(p => new RegExp(window.location.hostname, 'g' ).test(p)).length;
+
     return msg;
 }
 
